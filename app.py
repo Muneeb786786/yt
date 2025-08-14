@@ -56,7 +56,7 @@ import requests
 # -------------------------
 # Configuration
 # -------------------------
-API_KEY = os.environ.get("API_KEY")  # set this in Render environment
+API_KEY = os.environ.get("mm")  # set this in Render environment
 REDIS_URL = os.environ.get("REDIS_URL")
 RATE_LIMIT = os.environ.get("RATE_LIMIT", "300/hour")  # default 300 requests per hour per IP
 CACHE_TTL = int(os.environ.get("CACHE_TTL", "3600"))  # seconds
