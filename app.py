@@ -506,7 +506,7 @@ def api_audio():
     best_audio = None
     for f in reversed(info.get("formats", [])):
         if f.get("acodec") and f.get("url"):
-            if best_audio is None or (f.get("abr') if f.get('abr') else 0) > (best_audio.get('abr') if best_audio.get('abr') else 0):
+            if best_audio is None or (f.get("abr") if f.get('abr') else 0) > (best_audio.get('abr') if best_audio.get('abr') else 0):
                 best_audio = f
     # Simple loop to choose some audio if above miss (fallback)
     if not best_audio:
